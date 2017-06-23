@@ -44,6 +44,7 @@ ShapeRefiner::~ShapeRefiner() {
 }
 
 Status ShapeRefiner::AddNode(const Node* node) {
+  return Status::OK();
   // For each 'input' of this node, fetch the corresponding shape
   // from 'input's InferenceContext, and store into a vector
   // indexed by 'node's input.
